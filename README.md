@@ -9,11 +9,11 @@ This is a report of the [Ukrainian emotions classification task](https://www.kag
 The goal of the task is to classify short Ukrainian reviews by categories and emotions. Solution should be based on NN and not use APIs. Evaluation metric is Macro F1 averaged across tasks (columns).
 
 Files:
-- `train.csv`: dataset for training
-- `test.csv`: competition dataset
-- `submission.csv`: my submission file for the competition
-- `run.ipynb`: notebook with the solution
-- `models/`: directory for model training (empty cuz each fold is more than 1Gb)
+- [`train.csv`](./train.csv): dataset for training
+- [`test.csv`](./test.csv): competition dataset
+- [`submission.csv`](./submission.csv): my submission file for the competition
+- [`run.ipynb`](./run.ipynb): notebook with the solution
+- [`models/`](./models/): directory for model training (empty cuz each fold is more than 1Gb)
 
 ## Approach
 The main idea is to use a Bert-based model which is pre-trained on a large dataset of Ukrainian text. Then we train a two-headed model to classify the reviews by categories and emotions.
